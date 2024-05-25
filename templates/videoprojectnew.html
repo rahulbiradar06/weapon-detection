@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <script src="https://cdn.tailwindcss.com"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video</title>
+
+</head>
+<body>
+<header class="text-gray-600 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+<!--      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-pink-500 rounded-full" viewBox="0 0 24 24">-->
+<!--        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>-->
+<!--      </svg>-->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ed64a6" d="M240 32a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM192 48a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32 80c17.7 0 32 14.3 32 32h8c13.3 0 24 10.7 24 24v16c0 1.7-.2 3.4-.5 5.1C280.3 229.6 320 286.2 320 352c0 88.4-71.6 160-160 160S0 440.4 0 352c0-65.8 39.7-122.4 96.5-146.9c-.4-1.6-.5-3.3-.5-5.1V184c0-13.3 10.7-24 24-24h8c0-17.7 14.3-32 32-32zm0 320a96 96 0 1 0 0-192 96 96 0 1 0 0 192zm192-96c0-25.9-5.1-50.5-14.4-73.1c16.9-32.9 44.8-59.1 78.9-73.9c-.4-1.6-.5-3.3-.5-5.1V184c0-13.3 10.7-24 24-24h8c0-17.7 14.3-32 32-32s32 14.3 32 32h8c13.3 0 24 10.7 24 24v16c0 1.7-.2 3.4-.5 5.1C600.3 229.6 640 286.2 640 352c0 88.4-71.6 160-160 160c-62 0-115.8-35.3-142.4-86.9c9.3-22.5 14.4-47.2 14.4-73.1zm224 0a96 96 0 1 0 -192 0 96 96 0 1 0 192 0zM368 0a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm80 48a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+      <span class="ml-3 text-xl" href="/home">CRIME DETECTION</span>
+    </a>
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+      <a class="mr-5 hover:text-gray-900" href="/home">Home</a>
+      <a class="mr-5 hover:text-gray-900" href="/FrontPage">Video</a>
+      <a class="mr-5 hover:text-gray-900" href="/webcam">LiveWebcam</a>
+        <a class="mr-5 hover:text-gray-900" href="/project_detail">project Detail</a>
+    </nav>
+  </div>
+</header>
+
+<!--HERO SECTION-->
+
+                                        <div class="flex justify-center ">
+                                            <div class="flex flex-col justify-center">
+
+                                                <div class="flex flex-col max-w-7xl justify-center items-center p-2 mt-10">
+                                                    <div class="flex flex-col w-[90%] md:w-3/4 text-center items-center justify-center space-y-3">
+                                                        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Upload Video for Analysis</h1>
+                                                        <div class="text-xl font-semibold text-gray-400 ">
+                                                            Upload your video here for comprehensive analysis. Our advanced gun detection technology swiftly identifies firearms, empowering proactive security measures in various environments.
+                                                        </div>
+                                                        <div class="md:text-lg"><form method = 'POST' enctype="multipart/form-data" style="align-content: center; text-align: center;display: flex;  " >
+                                                            {{form.hidden_tag()}}
+        {{form.file(class_="custom-file-input")}}
+                                                                <button type="submit" name="favorite" value="x"
+                                                                class="p-1 m-2 rounded-2xl text-white bg-blue-500 px-4 font-semibold  hover:bg-blue-900 hover:trandform ease-in-out duration-300">
+                                                                Submit </button></form>
+                                                            </div>
+                                                    </div>
+                                                    <div class="w-3/4 h-60 md:h-96 my-4  rounded-lg overflow-hidden" class="col-sm ">
+                                                        <img src="{{ url_for('video') }}"   alt="Upload video" class="h-full w-full" >
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://use.fontawesome.com/03f8a0ebd4.js"></script>
+</body>
+</html>
+
+
+
+
