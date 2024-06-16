@@ -28,4 +28,4 @@ PyTorch
 
 To achieve the best performance, you can purchase our optimized YOLOv8 weight files. 
 These weights are fine-tuned for weapon detection, providing high accuracy and 
-speed. For purchasing details and licensing information, please contact us at [rahulbiradar0601@gmail.com].
+speed. For purchasing details and licensing information, please contact me at [rahulbiradar0601@gmail.com].
